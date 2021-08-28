@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test-Runner1(failed)">
+    <classes>
+      <class name="com.vtiger.comcast.opportunityTest.CreateOpportunityScenarioTest">
+        <methods>
+          <include name="CreateOppSalesStageQualTest"/>
+          <include name="createOpportunityTest"/>
+          <include name="createNewOppSalesStageAnalysisTest"/>
+          <include name="ConfigBeforeMethod"/>
+          <include name="ConfigAfterMethod"/>
+          <include name="ConfigAfterClass"/>
+          <include name="ConfigureBeforeClass"/>
+        </methods>
+      </class> <!-- com.vtiger.comcast.opportunityTest.CreateOpportunityScenarioTest -->
+    </classes>
+  </test> <!-- Test-Runner1(failed) -->
+  <test thread-count="2" parallel="tests" name="Test-Runner2(failed)">
+    <classes>
+      <class name="com.vtiger.comcast.createContact.CreateContactTest">
+        <methods>
+          <include name="CreateContWithOrg"/>
+          <include name="CreateCont"/>
+          <include name="CreateContWithAddress"/>
+          <include name="ConfigBeforeMethod"/>
+          <include name="ConfigAfterMethod"/>
+          <include name="ConfigAfterClass"/>
+          <include name="ConfigureBeforeClass"/>
+        </methods>
+      </class> <!-- com.vtiger.comcast.createContact.CreateContactTest -->
+    </classes>
+  </test> <!-- Test-Runner2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
